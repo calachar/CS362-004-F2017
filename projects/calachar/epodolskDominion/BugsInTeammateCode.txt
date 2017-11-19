@@ -1,0 +1,20 @@
+Ralph Calachan
+
+Bugs found in Eric's Code
+
+Running my tests I found a few bugs when going through the output files.
+
+Most bugs were found by the game state checks I incorporated into my suite.
+These checks store the number of cards in hand, discard, deck among other variables.
+Then executes the function they are testing and comparing it with the expected value.
+For example my random smithy test would take the cards in hand, use the smithy card, then see if the correct amount in hand remained after the function call.
+
+
+The discard counts were wrong. I found these when the testing suite would test the game state.
+The discard function itself is wrong and never truly updates the discard pile number and therefore always throws an error.
+
+The smithy and adventurer tests also came back as errors. They had the incorrect number of cards in hand.
+Also they did not correctly loop, I found this by going over the smithy function in his code.
+
+The game score was also incorrect when I tested due to the program not correctly checking all zones in which point cards can exist.
+
