@@ -1,0 +1,710 @@
+==========
+
+Unit Test 1: Initialize Game Function Test
+==========
+ Number of Players : 2, Supposed to be 2 
+ Player Count Correct! 
+ Number of Supply/Curse : 10, Supposed to be 10 
+ Supply Count Correct! 
+ Number of Supply/Duchy : 8, Supposed to be 8 
+ Supply Count Correct! 
+ Number of Supply/Estate : 8, Supposed to be 8 
+ Supply Count Correct! 
+ Number of Supply/Province : 8, Supposed to be 8 
+ Supply Count Correct! 
+ Player 0, Coppers: 7 (should be 7), Estates: 3 (should be 3)
+ Copper Count Correct! 
+ Estate Count Correct! 
+ Player 1, Coppers: 7 (should be 7), Estates: 3 (should be 3)
+ Copper Count Correct! 
+ Estate Count Correct! 
+Function 'main'
+Lines executed:81.40% of 43
+Branches executed:100.00% of 22
+Taken at least once:63.64% of 22
+Calls executed:69.23% of 26
+
+File 'unittest1.c'
+Lines executed:81.40% of 43
+Branches executed:100.00% of 22
+Taken at least once:63.64% of 22
+Calls executed:69.23% of 26
+Creating 'unittest1.c.gcov'
+
+==========
+
+Unit Test 2: Shuffle Game Function Test
+==========
+
+=========Player Decks Before Shuffle========
+
+
+Player 0 Deck:
+Estate
+Estate
+Estate
+Copper
+Copper
+Copper
+Copper
+Copper
+Copper
+Copper
+
+Player 1 Deck:
+Estate
+Estate
+Estate
+Copper
+Copper
+Copper
+Copper
+Copper
+Copper
+Copper
+
+=========Player Decks after Shuffling=======
+
+Player 0 Deck:
+Copper
+Copper
+Copper
+Estate
+Copper
+Copper
+Estate
+Copper
+Copper
+Estate
+
+Player 1 Deck:
+Copper
+Copper
+Copper
+Estate
+Copper
+Copper
+Estate
+Estate
+Copper
+Copper
+PLAYER 0 DECK IS SHUFFLED: TEST SUCCESSFUL
+PLAYER 1 DECK IS SHUFFLED: TEST SUCCESSFUL
+Function 'main'
+Lines executed:97.67% of 43
+Branches executed:100.00% of 30
+Taken at least once:90.00% of 30
+Calls executed:94.74% of 19
+
+File 'unittest2.c'
+Lines executed:97.67% of 43
+Branches executed:100.00% of 30
+Taken at least once:90.00% of 30
+Calls executed:94.74% of 19
+Creating 'unittest2.c.gcov'
+
+==========
+
+Unit Test 3: Draw Game Function Test
+==========
+
+Player 0 has 5 cards in hand.
+Player 0 has 5 cards in deck.
+
+Drawing 1 card for player 0
+Player 0 has 8 cards in hand.
+Player 0 has 2 cards in deck.
+DRAW FOR PLAYER 0 SUCCEEDED.
+DECK COUNT FOR PLAYER 0 CORRECT.
+Function 'main'
+Lines executed:90.48% of 21
+Branches executed:100.00% of 4
+Taken at least once:50.00% of 4
+Calls executed:88.24% of 17
+
+File 'unittest3.c'
+Lines executed:90.48% of 21
+Branches executed:100.00% of 4
+Taken at least once:50.00% of 4
+Calls executed:88.24% of 17
+Creating 'unittest3.c.gcov'
+
+==========
+
+Unit Test 4: Score Game Function Test
+==========
+
+Player 0 has 1 points, should be 3.
+Adding a estate to the discard pile
+INCORRECT SCORE
+Player 0 has 3 points, should be 4.
+INCORRECT SCORE
+Adding a estate to the hand
+Player 0 has 4 points, should be 5.
+INCORRECT SCORE
+Adding a estate to the deck
+Player 0 has 4 points, should be 6.
+INCORRECT SCORE
+Function 'main'
+Lines executed:87.50% of 32
+Branches executed:100.00% of 8
+Taken at least once:50.00% of 8
+Calls executed:85.71% of 28
+
+File 'unittest4.c'
+Lines executed:87.50% of 32
+Branches executed:100.00% of 8
+Taken at least once:50.00% of 8
+Calls executed:85.71% of 28
+Creating 'unittest4.c.gcov'
+
+==========
+
+Card Test 1: Smithy Function Test
+==========
+
+Adding smithy card to player 0's hand.
+Player 0 has 6 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperSmithy
+Player 0 has 5 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopperCopperCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+Playing a smithy card.
+Player 0 has 8 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperCopperCopperCopper
+Player 0 has 2 cards in deck.
+
+Player 0 Deck:
+EstateEstate
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+HAND COUNT TEST SUCCESSFUL
+DECK COUNT TEST SUCCESSFUL
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN DISCARD
+Function 'main'
+Lines executed:74.71% of 87
+Branches executed:72.73% of 66
+Taken at least once:57.58% of 66
+Calls executed:74.00% of 50
+
+File 'cardtest1.c'
+Lines executed:74.71% of 87
+Branches executed:72.73% of 66
+Taken at least once:57.58% of 66
+Calls executed:74.00% of 50
+Creating 'cardtest1.c.gcov'
+
+==========
+
+Card Test 2: Adventurer Function Test
+==========
+
+Adding adding adventurer card to player 0's hand.
+Player 0 has 6 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperAdventurer
+Player 0 has 5 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopperCopperCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+==Playing a adventurer card.==
+Player 0 has 8 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperAdventurerCopperCopper
+Player 0 has 3 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN HAND
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN DECK
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN DISCARD
+Function 'main'
+Lines executed:77.53% of 89
+Branches executed:75.00% of 72
+Taken at least once:59.72% of 72
+Calls executed:76.47% of 51
+
+File 'cardtest2.c'
+Lines executed:77.53% of 89
+Branches executed:75.00% of 72
+Taken at least once:59.72% of 72
+Calls executed:76.47% of 51
+Creating 'cardtest2.c.gcov'
+
+==========
+
+Card Test 3: Village Function Test
+==========
+
+Adding adding Village card to player 0's hand.
+Player 0 has 1 actions
+Player 0 has 6 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopper
+Player 0 has 5 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopperCopperCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+==Playing a village card.==
+Player 0 has 2 actions
+Player 0 has 6 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperCopper
+Player 0 has 4 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopperCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+HAND COUNT TEST SUCCESSFUL
+DECK COUNT TEST SUCCESSFUL
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN DISCARD
+NUM ACTIONS TEST SUCCESSFUL
+Function 'main'
+Lines executed:75.00% of 92
+Branches executed:73.53% of 68
+Taken at least once:58.82% of 68
+Calls executed:74.07% of 54
+
+File 'cardtest3.c'
+Lines executed:75.00% of 92
+Branches executed:73.53% of 68
+Taken at least once:58.82% of 68
+Calls executed:74.07% of 54
+Creating 'cardtest3.c.gcov'
+
+==========
+
+Card Test 4: Great Hall Function Test
+==========
+
+Adding adding Great Hall card to player 0's hand.
+Player 0 has 1 actions
+Player 0 has 6 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperGreat Hall
+Player 0 has 5 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopperCopperCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+==Playing a Great Hall card.==
+Player 0 has 1 actions
+Player 0 has 6 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperCopper
+Player 0 has 4 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopperCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+HAND COUNT TEST SUCCESSFUL
+DECK COUNT TEST SUCCESSFUL
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN DISCARD
+NUM ACTIONS TEST SUCCESSFUL
+VICTORY POINT TEST FAILED
+Function 'main'
+Lines executed:75.79% of 95
+Branches executed:74.29% of 70
+Taken at least once:58.57% of 70
+Calls executed:75.44% of 57
+
+File 'cardtest4.c'
+Lines executed:75.79% of 95
+Branches executed:74.29% of 70
+Taken at least once:58.57% of 70
+Calls executed:75.44% of 57
+Creating 'cardtest4.c.gcov'
+
+==========
+
+Unit Test 1: Initialize Game Function Test
+==========
+ Number of Players : 2, Supposed to be 2 
+ Player Count Correct! 
+ Number of Supply/Curse : 10, Supposed to be 10 
+ Supply Count Correct! 
+ Number of Supply/Duchy : 8, Supposed to be 8 
+ Supply Count Correct! 
+ Number of Supply/Estate : 8, Supposed to be 8 
+ Supply Count Correct! 
+ Number of Supply/Province : 8, Supposed to be 8 
+ Supply Count Correct! 
+ Player 0, Coppers: 7 (should be 7), Estates: 3 (should be 3)
+ Copper Count Correct! 
+ Estate Count Correct! 
+ Player 1, Coppers: 7 (should be 7), Estates: 3 (should be 3)
+ Copper Count Correct! 
+ Estate Count Correct! 
+Function 'main'
+Lines executed:81.40% of 43
+Branches executed:100.00% of 22
+Taken at least once:63.64% of 22
+Calls executed:69.23% of 26
+
+File 'unittest1.c'
+Lines executed:81.40% of 43
+Branches executed:100.00% of 22
+Taken at least once:63.64% of 22
+Calls executed:69.23% of 26
+Creating 'unittest1.c.gcov'
+
+==========
+
+Unit Test 2: Shuffle Game Function Test
+==========
+
+=========Player Decks Before Shuffle========
+
+
+Player 0 Deck:
+Estate
+Estate
+Estate
+Copper
+Copper
+Copper
+Copper
+Copper
+Copper
+Copper
+
+Player 1 Deck:
+Estate
+Estate
+Estate
+Copper
+Copper
+Copper
+Copper
+Copper
+Copper
+Copper
+
+=========Player Decks after Shuffling=======
+
+Player 0 Deck:
+Copper
+Copper
+Copper
+Estate
+Copper
+Copper
+Estate
+Copper
+Copper
+Estate
+
+Player 1 Deck:
+Copper
+Copper
+Copper
+Estate
+Copper
+Copper
+Estate
+Estate
+Copper
+Copper
+PLAYER 0 DECK IS SHUFFLED: TEST SUCCESSFUL
+PLAYER 1 DECK IS SHUFFLED: TEST SUCCESSFUL
+Function 'main'
+Lines executed:97.67% of 43
+Branches executed:100.00% of 30
+Taken at least once:90.00% of 30
+Calls executed:94.74% of 19
+
+File 'unittest2.c'
+Lines executed:97.67% of 43
+Branches executed:100.00% of 30
+Taken at least once:90.00% of 30
+Calls executed:94.74% of 19
+Creating 'unittest2.c.gcov'
+
+==========
+
+Unit Test 3: Draw Game Function Test
+==========
+
+Player 0 has 5 cards in hand.
+Player 0 has 5 cards in deck.
+
+Drawing 1 card for player 0
+Player 0 has 8 cards in hand.
+Player 0 has 2 cards in deck.
+DRAW FOR PLAYER 0 SUCCEEDED.
+DECK COUNT FOR PLAYER 0 CORRECT.
+Function 'main'
+Lines executed:90.48% of 21
+Branches executed:100.00% of 4
+Taken at least once:50.00% of 4
+Calls executed:88.24% of 17
+
+File 'unittest3.c'
+Lines executed:90.48% of 21
+Branches executed:100.00% of 4
+Taken at least once:50.00% of 4
+Calls executed:88.24% of 17
+Creating 'unittest3.c.gcov'
+
+==========
+
+Unit Test 4: Score Game Function Test
+==========
+
+Player 0 has 1 points, should be 3.
+Adding a estate to the discard pile
+INCORRECT SCORE
+Player 0 has 3 points, should be 4.
+INCORRECT SCORE
+Adding a estate to the hand
+Player 0 has 4 points, should be 5.
+INCORRECT SCORE
+Adding a estate to the deck
+Player 0 has 4 points, should be 6.
+INCORRECT SCORE
+Function 'main'
+Lines executed:87.50% of 32
+Branches executed:100.00% of 8
+Taken at least once:50.00% of 8
+Calls executed:85.71% of 28
+
+File 'unittest4.c'
+Lines executed:87.50% of 32
+Branches executed:100.00% of 8
+Taken at least once:50.00% of 8
+Calls executed:85.71% of 28
+Creating 'unittest4.c.gcov'
+
+==========
+
+Card Test 1: Smithy Function Test
+==========
+
+Adding smithy card to player 0's hand.
+Player 0 has 6 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperSmithy
+Player 0 has 5 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopperCopperCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+Playing a smithy card.
+Player 0 has 9 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperEstateCopperCopperCopper
+Player 0 has 1 cards in deck.
+
+Player 0 Deck:
+Estate
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN HAND
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN DECK
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN DISCARD
+Function 'main'
+Lines executed:74.71% of 87
+Branches executed:72.73% of 66
+Taken at least once:57.58% of 66
+Calls executed:74.00% of 50
+
+File 'cardtest1.c'
+Lines executed:74.71% of 87
+Branches executed:72.73% of 66
+Taken at least once:57.58% of 66
+Calls executed:74.00% of 50
+Creating 'cardtest1.c.gcov'
+
+==========
+
+Card Test 2: Adventurer Function Test
+==========
+
+Adding adding adventurer card to player 0's hand.
+Player 0 has 6 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperAdventurer
+Player 0 has 5 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopperCopperCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+==Playing a adventurer card.==
+Player 0 has 8 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperAdventurerCopperCopper
+Player 0 has 3 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN HAND
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN DECK
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN DISCARD
+Function 'main'
+Lines executed:77.53% of 89
+Branches executed:75.00% of 72
+Taken at least once:59.72% of 72
+Calls executed:76.47% of 51
+
+File 'cardtest2.c'
+Lines executed:77.53% of 89
+Branches executed:75.00% of 72
+Taken at least once:59.72% of 72
+Calls executed:76.47% of 51
+Creating 'cardtest2.c.gcov'
+
+==========
+
+Card Test 3: Village Function Test
+==========
+
+Adding adding Village card to player 0's hand.
+Player 0 has 1 actions
+Player 0 has 6 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopper
+Player 0 has 5 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopperCopperCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+==Playing a village card.==
+Player 0 has 2 actions
+Player 0 has 6 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperCopper
+Player 0 has 4 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopperCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+HAND COUNT TEST SUCCESSFUL
+DECK COUNT TEST SUCCESSFUL
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN DISCARD
+NUM ACTIONS TEST SUCCESSFUL
+Function 'main'
+Lines executed:75.00% of 92
+Branches executed:73.53% of 68
+Taken at least once:58.82% of 68
+Calls executed:74.07% of 54
+
+File 'cardtest3.c'
+Lines executed:75.00% of 92
+Branches executed:73.53% of 68
+Taken at least once:58.82% of 68
+Calls executed:74.07% of 54
+Creating 'cardtest3.c.gcov'
+
+==========
+
+Card Test 4: Great Hall Function Test
+==========
+
+Adding adding Great Hall card to player 0's hand.
+Player 0 has 1 actions
+Player 0 has 6 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperGreat Hall
+Player 0 has 5 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopperCopperCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+==Playing a Great Hall card.==
+Player 0 has 1 actions
+Player 0 has 6 cards in hand.
+
+Player 0 Hand:
+CopperCopperCopperEstateCopperCopper
+Player 0 has 4 cards in deck.
+
+Player 0 Deck:
+EstateEstateCopperCopper
+Player 0 has 0 cards in discard.
+
+Player 0 Discard:
+
+HAND COUNT TEST SUCCESSFUL
+DECK COUNT TEST SUCCESSFUL
+TESTING FAILED: INCORRECT AMOUNTS OF CARDS IN DISCARD
+NUM ACTIONS TEST SUCCESSFUL
+VICTORY POINT TEST FAILED
+Function 'main'
+Lines executed:75.79% of 95
+Branches executed:74.29% of 70
+Taken at least once:58.57% of 70
+Calls executed:75.44% of 57
+
+File 'cardtest4.c'
+Lines executed:75.79% of 95
+Branches executed:74.29% of 70
+Taken at least once:58.57% of 70
+Calls executed:75.44% of 57
+Creating 'cardtest4.c.gcov'
+
