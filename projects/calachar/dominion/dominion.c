@@ -646,7 +646,7 @@ int getCost(int cardNumber)
 int smithyCard(struct gameState *state, int handPos, int currentPlayer){
 	//+3 Cards
 	int i;
-    for (i = 0; i < 7; i++)
+    for (i = 0; i < 3; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}
@@ -658,7 +658,7 @@ int smithyCard(struct gameState *state, int handPos, int currentPlayer){
 
 int adventurerCard(struct gameState *state, int handPos, int currentPlayer, int drawntreasure, int temphand[], int z){
 	int cardDrawn;
-	while(drawntreasure<1){
+	while(drawntreasure<2){
 		if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
 		  shuffle(currentPlayer, state);
 		}
